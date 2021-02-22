@@ -11,15 +11,60 @@ body {
     background-color: #063C5E;
 }
 .pageinfo{
-    background-color: #fff; 
-    color: black;  
+    background-color: #fff;  
     border-width: 0 0 4px;
     border-style: solid;
     border-color: #FCCF14;
+}
+.figure img{
+    width:200px;
 }
 nav ul{
     list-style-type: none;
 }
 a, h3, p{
     color: whitesmoke;
+}
+footer img{
+    width: 150px;
+}
+footer > p{
+    color:whitesmoke
+}
+
+/* COMICCARD */
+.cardtop{
+    padding:40px;
+}
+.title{
+    font-size: 20px;
+    color:#fccf14;
+    font-weight: bold;
+    margin: 20px 150px;
+}
+.tophalf{
+    background-color: #063C5E;
+    border-radius: 40px 40px 0px 0px;
+    border: 5px solid #fccf14;
+    text-align: center;
+    padding:20px;
+}
+.tophalf img{
+    width:400px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border:2px solid #FFFFFF;
+    border-radius: 40px;
+}
+.bottomhalf{
+    background-color: #FFFFFF;
+    border-radius: 0px 0px 40px 40px;
+   
+    padding: 40px;
+    border: 5px solid #fccf14;
+    border-top:0;
+}
+.bottomhalf > p{
+    color:black
 }
