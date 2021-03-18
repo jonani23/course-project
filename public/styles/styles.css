@@ -11,7 +11,7 @@ body {
 }
 .pageinfo {
   background-color: #fff;
-  border-width: 0 0 4px;
+  border-width: 0 0 6px;
   border-style: solid;
   border-color: #fccf14
 }
@@ -21,16 +21,14 @@ body {
 ul {
   list-style-type: none
 }
-a,
+.footer-link a,
+footer > p,
 h3,
-p {
-  color: #f5f5f5
+li a {
+  color: #fff
 }
 footer img {
   width: 150px
-}
-footer > p {
-  color: #fff
 }
 .cardtop {
   padding: 40px
