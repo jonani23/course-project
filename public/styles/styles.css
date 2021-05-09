@@ -380,7 +380,7 @@
 }
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  background-color: var(--light-teal);
+  background-color: var(--white);
 }
 
 @media screen and (min-width: 1024px){
