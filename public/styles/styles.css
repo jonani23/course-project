@@ -1,4 +1,4 @@
-  /*Color Variants */
+  /*COLOR VARIANTS */
   :root {
     --teal: #006B6B;
     --light-teal: #009E9E;
@@ -9,6 +9,8 @@
     --white: #FFFFFF;
     --black: #000000;
   }
+
+  /* H TAGS */
 
   h1,
   h2 {
@@ -22,6 +24,8 @@
     font-family: 'Fredericka the Great';
   }
 
+
+/* HEADER */
   .logo {
     background-color: var(--blue);
     display: flex;
@@ -66,6 +70,8 @@
     width: 300px
   }
 
+  /* MAIN BODY */
+
   body {
     font-size: 25px;
     font-family: 'Open Sans', sans-serif;
@@ -77,14 +83,16 @@
     background-image: linear-gradient(180deg, var(--white), var(--light-teal), var(--teal))
   }
 
-  .info {
+  .info{
     border: 5px solid var(--blue);
-    padding: 0 40px 80px;
-    margin: 150px;
+    padding: 20px 80px 80px;
+    margin: 200px;
+    width: auto;
     background-color: var(--white);
-
+    
+   
   }
-
+  
   .button {
     background-color: var(--yellow);
     text-align: center;
@@ -117,58 +125,70 @@
 
   button {
     background-color: var(--yellow);
-    padding: 0 40px 80px;
     text-align: center;
     width: fit-content;
     margin: auto;
     font-size: .7em;
     padding: 5px 25px;
-    display: flex;
-    justify-content: flex-end;
+    display: block;
+    /* justify-content: flex-end; */
   }
 
+  /* INDEX FLEX */
   .collection-detail {
     display: flex;
     flex-flow: column wrap;
     align-content: center;
   }
 
-  .center,
+/* TABLES */
   td,
   th {
     border: 3px solid var(--blue);
     border-collapse: collapse;
     table-layout: auto;
-    width: 85%;
-    height: 10px;
-    padding: 5px 10px
+    width: 100%;
+    min-width:fit-content; 
+    padding: 5px 10px;
+    @media screen and (min-width:320px){
+      font-size: 1.2rem;
+    }
+      
   }
+
 
   tr:nth-child(odd) {
     background-color: var(--grey);
   }
 
+  table {
+    border-collapse: collapse;
+    margin: 40px;
+    display: flex;
+    justify-content: center;
+
+  }
+
+  /* TABLE BUTTONS */
+
   .EDIT {
     background-color: var(--blue);
-    text-align: center;
     color: var(--white);
+    text-align: center;
+    width: fit-content;
     margin: auto;
-    display: inline-block;
-    padding: 5px 25px
-  }
+    display: block;
+  }  
 
   .DELETE {
     background-color: var(--yellow);
     text-align: center;
+    width: fit-content;
     margin: auto;
-    display: inline-block;
-    padding: 5px 10px;
+    display: block;
   }
 
-  .center {
-    margin-left: auto;
-    margin-right: auto
-  }
+
 
   .figure img {
     width: 200px
@@ -259,7 +279,8 @@
   }
 
   .tophalf img {
-    width: 400px;
+    display: flex;
+    /* width: 400px; */
     height: auto;
     margin-left: auto;
     margin-right: auto;
@@ -275,11 +296,7 @@
     border-top: 0
   }
 
-  .bottomhalf>p {
-    color: #000
-  }
-
-  /* Index Page Flexy */
+ /* Index Page FLEX 2 */
   .figure {
     display: flex;
     flex-direction: row;
@@ -315,5 +332,72 @@
     background-color: var(--yellow);
     color: var(--blue);
     font: bold;
+  } 
 
+/* RESPONSIVE DESIGN */
+@media screen and (min-width:320px) and (max-width: 768px) {
+  .topnav{
+      display: none;
   }
+  .logo i{
+      display: flex;
+      justify-content: space-around;
+      color:var(--white);
+      margin: auto 2em;
+  }
+  .footer{
+      display: flex;
+      flex-flow: column nowrap;
+  }
+  .info{
+      padding:20px ;
+      margin: 20px;
+  
+  }
+  form{
+      width:100%;
+  }
+  label{
+      text-align: left;
+  }
+  input, select, textarea{
+      margin: 10px 0px;
+  }
+  td,th{
+      padding: 2px 2px;
+      font-size: .8rem;
+  
+  }
+  table{
+      overflow-x:visible;
+      margin: 20px;
+  }
+}
+
+@media screen and (min-width: 1024px){
+  .cardtop{
+      display: flex;
+      flex-flow: row nowrap;
+      border-radius: 40px 40px 40px 40px;
+      border: 5px solid var(--yellow);
+  }
+  .tophalf{
+      border-radius: 35px 0px 0px 35px;
+      border: none;
+  }
+  .bottomhalf{
+      border-radius: 0px 35px 35px 0px;
+      border: none;
+  }
+
+} 
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: var(--white);
+}
+
