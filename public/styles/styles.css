@@ -333,7 +333,9 @@ a:active {
     font-size: 2rem;
   }
   p,
-  h3 {
+  h3,
+  .cell > a,
+  .collection-detail > li {
     font-size: 1rem;
   }
   .topnav a,

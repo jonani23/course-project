@@ -1,32 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
+<%- include('../partials/head') -%>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CodeSquad Comics</title>
-    <link rel="stylesheet" type="text/css" href="public/styles/styles.css">
-    <script src="https://kit.fontawesome.com/7f93b8e249.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"rel="stylesheet">
-    <script src="public/scripts/scripts.js" defer></script>      
-</head>
-
-<body>
-    <!--PAGE HEADER-->
-    <div class="logo">
-        <a href="index.html" target="_self" rel="noreferrer noopener"><img src="public/images/CodeSquad-Comics-logo.png" alt="CodeSquad Comics Logo"></a>
-        <a href="javascript:void(0);" class="menu">
-            <i class="fa fa-bars" fa-2x></i>
-        </a>
-        <div class="topnav">
-            <a href="index.html" target="_blank" rel="noreferrer noopener">HOME</a>
-            <a href="about.html" target="_self" rel="noreferrer noopener">ABOUT</a>
-            <a href="login.html" target="_blank" rel="noreferrer noopener">LOGIN</a>
-        </div>
-    </div>
+<%- include('../partials/nav') -%>
     <div class="pageinfo">
         <div class="info">
             <h1>CREATE NEW COMIC</h1>
@@ -78,31 +52,4 @@
         </div>
     </div>
     <!--PAGE FOOTER-->
-    <div class="footer">
-        <div class="cell">
-            <h3>VISIT US</h3>
-            <p>CodeSquad Comics<br>
-                123 Dorchester Avenue<br>
-                Boston, MA 02124</p>
-        </div>
-        <div class="cell">
-            <h3>LINKS</h3>
-            <a href="index.html" target="_blank" rel="noreferrer noopener">Home</a>
-            <a href="about.html" target="_self" rel="noreferrer noopener">About</a>
-            <a href="login.html" target="_blank" rel="noreferrer noopener">Login</a>
-        </div>
-        <div class="cell">
-            <h3>FOLLOW US</h3>
-            <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
-            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-        </div>
-        <div class="cell">
-            <h3>A PRODUCT OF</h3>
-            <a href="http://codesquad.org" target="_blank" rel="noreferrer noopener"><img
-                    src="public/images/CodeSquad-logo-b.png" alt="CodeSquad Logo"></a>
-        </div>
-    </div>
-</body>
-
-</html>
+    <%- include('../partials/footer') -%>
